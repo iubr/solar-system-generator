@@ -44,7 +44,7 @@ class SolarSystem:
     def __str__(self):
         """ Print information about the solar system.
         """
-        text = "The solar system consist of one star and %d planets.\n\n" % self.number_of_planets
+        text = "The solar system consists of one star and %d planets.\n\n" % self.number_of_planets
         text += self.sun.__str__() + "\n"
         for planet in self.planets:
             if planet.name is not None:
