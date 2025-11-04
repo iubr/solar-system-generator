@@ -25,7 +25,7 @@ solsysgen/
 ```
 
 ## Installation instructions
-We recommend that you install the solar system generator in a conda environment. If you don't already have conda, install [Miniconda](https://www.anaconda.com/download/success) following the [instructions](https://www.anaconda.com/docs/getting-started/miniconda/install) for your operating system. Once you have miniconda, create a new conda environment using the [pysolsys-env.yml](https://github.com/iubr/solar-system-generator/blob/main/pysolsys-env.toml) file. In a terminal (or Anaconda Powershell prompt for Windows), run:
+We recommend that you install the solar system generator in a conda environment. If you don't already have conda, install [Miniconda](https://www.anaconda.com/download/success) following the [instructions](https://www.anaconda.com/docs/getting-started/miniconda/install) for your operating system. Once you have miniconda, create a new conda environment using the [pysolsys-env.yml]([https://github.com/iubr/solar-system-generator/blob/main/pysolsys-env.toml](https://github.com/iubr/solar-system-generator/blob/main/pysolsys-env.yml) file. In a terminal (or Anaconda Powershell prompt for Windows), run:
 
 ```
 conda env create -f pysolsys-env.yml
