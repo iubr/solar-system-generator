@@ -1,3 +1,11 @@
+# PySolSys: a solar system generator
+#
+# GNU GPLv3
+#
+# Copyright (C) 2025 PySolSys developers.
+#
+# This file is part of PySolSys.
+
 import numpy as np
 import h5py
 
@@ -12,22 +20,18 @@ def read_from_checkpoint_file(filename):
             a dictionary with NumPy arrays.
     """
 
-    # TODO: check that the filename is a valid file
-
-    # Open file for reading
+    # TODO: Check that the filename is a valid file.
     hf = h5py.File(filename, "r")
 
-    keys = hf.keys()
-
+    keys = hf.keys() # Get data labels
     output_dict = {}
 
-    # TODO: add check to make sure that
-    # what is read from file can be represented as an array.
+    # FIXME: Add check to make sure that what is
+    # read can be represented as an array.
     for key in keys:
         array = np.array(hf.get(key))
         output_dict[key] = array
 
-    # Close file
     hf.close()
 
     return output_dict

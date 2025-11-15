@@ -18,11 +18,6 @@ from matplotlib import pyplot as plt
 from .planet import Planet
 from .sun import Sun
 
-__authors__ = "Iulia Emilia Brumboiu"
-__copyright__ = "(c) 2025, The PySolSys Developers"
-__license__ = "GNU GPLv3"
-__date__ = "2025-11-14"
-
 
 class SolarSystem:
     """Implements a SolarSystem class which consists of one sun and

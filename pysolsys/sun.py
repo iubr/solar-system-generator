@@ -1,3 +1,11 @@
+# PySolSys: a solar system generator
+#
+# GNU GPLv3
+#
+# Copyright (C) 2025 PySolSys developers.
+#
+# This file is part of PySolSys.
+
 import numpy as np
 
 

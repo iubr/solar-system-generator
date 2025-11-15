@@ -1,3 +1,11 @@
+# PySolSys: a solar system generator
+#
+# GNU GPLv3
+#
+# Copyright (C) 2025 PySolSys developers.
+#
+# This file is part of PySolSys.
+
 import numpy as np
 
 
@@ -9,7 +17,8 @@ class Planet:
     Instance variables
         - mass: The planet's mass in Earth masses.
         - radius: The planet's radius in Earth radius.
-        - planet_type: The type of planet (super-Jupyter, giant, super-Neptune, ice giant,
+        - planet_type: The type of planet (super-Jupyter, giant,
+          super-Neptune, ice giant,
           sub-Neptune, mini-Neptune, mega-Earth, super-Earth, Sub-earth).
         - distance_to_sun: The distance to the sun in astronomical units.
         - starting_position: The starting position on the planet's orbit.
