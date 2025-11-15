@@ -15,7 +15,7 @@ In other words, $T^2 \propto r^3$. Here, $T$ is the orbital period, $G$ is the g
 The code is structured as follows:
 
 ```
-solsysgen/
+pysolsys/
 |----- __init__.py
 |----- sun.py # Sun class
 |----- planet.py # Planet class
