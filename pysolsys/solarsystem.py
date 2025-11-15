@@ -1,27 +1,47 @@
-from .sun import Sun
-from .planet import Planet
+# PySolSys: a solar system generator
+#
+# GNU GPLv3
+#
+# Copyright (C) 2025 PySolSys developers.
+#
+# This file is part of PySolSys.
+
+import os
+import sys
+import time
 
 import numpy as np
+import py3umk
+from matplotlib import colormaps as cmaps
+from matplotlib import pyplot as plt
+
+from .planet import Planet
+from .sun import Sun
+
+__authors__ = "Iulia Emilia Brumboiu"
+__copyright__ = "(c) 2025, The PySolSys Developers"
+__license__ = "GNU GPLv3"
+__date__ = "2025-11-14"
+
 
 class SolarSystem:
-    """ Implements a SolarSystem class which consists of one sun and
-        a collection of planets.
+    """Implements a SolarSystem class which consists of one sun and
+    a collection of planets.
 
-        :param sun:
-            the sun.
-        :param number_of_plantes:
-            the number of planets in the solar system.
+    :param sun:
+        the sun.
+    :param number_of_plantes:
+        the number of planets in the solar system.
 
-        Instance variables
-            - sun: The sun.
-            - number_of_planets: The number of planets.
-            - planets: The list of planets.
+    Instance variables
+        - sun: The sun.
+        - number_of_planets: The number of planets.
+        - planets: The list of planets.
 
     """
 
     def __init__(self, sun, number_of_planets):
-        """ Initializes a solar system.
-        """
+        """Initializes a solar system."""
 
         # check if variable sun is a Sun-type object.
         if isinstance(sun, Sun):
@@ -42,9 +62,11 @@ class SolarSystem:
             raise TypeError("SolarSystem: the number of planets is not an integer.")
 
     def __str__(self):
-        """ Print information about the solar system.
-        """
-        text = "The solar system consists of one star and %d planets.\n\n" % self.number_of_planets
+        """Print information about the solar system."""
+        text = (
+            "The solar system consists of one star and %d planets.\n\n"
+            % self.number_of_planets
+        )
         text += self.sun.__str__() + "\n"
         for planet in self.planets:
             if planet.name is not None:

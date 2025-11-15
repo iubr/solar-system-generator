@@ -1,25 +1,25 @@
 import numpy as np
 
+
 # TODO: figure out which parameters are needed
 # and which should be calculated.
 class Planet:
-    """ Implements the Planet class.
+    """Implements the Planet class.
 
-        Instance variables
-            - mass: The planet's mass in Earth masses.
-            - radius: The planet's radius in Earth radius.
-            - planet_type: The type of planet (super-Jupyter, giant, super-Neptune, ice giant,
-              sub-Neptune, mini-Neptune, mega-Earth, super-Earth, Sub-earth).
-            - distance_to_sun: The distance to the sun in astronomical units.
-            - starting_position: The starting position on the planet's orbit.
-            - orbital_velocity: The planet's orbital velocity.
-            - period: The period of rotation around the sun.
-            - name: Planet name.
+    Instance variables
+        - mass: The planet's mass in Earth masses.
+        - radius: The planet's radius in Earth radius.
+        - planet_type: The type of planet (super-Jupyter, giant, super-Neptune, ice giant,
+          sub-Neptune, mini-Neptune, mega-Earth, super-Earth, Sub-earth).
+        - distance_to_sun: The distance to the sun in astronomical units.
+        - starting_position: The starting position on the planet's orbit.
+        - orbital_velocity: The planet's orbital velocity.
+        - period: The period of rotation around the sun.
+        - name: Planet name.
     """
 
     def __init__(self):
-        """ Initializes a planet.
-        """
+        """Initializes a planet."""
         self.mass = None
         self.radius = None
         self.planet_type = None
@@ -30,8 +30,7 @@ class Planet:
         self.name = None
 
     def __str__(self):
-        """ Print relevant sun properties.
-        """
+        """Print relevant sun properties."""
         text = ""
         if self.name is not None:
             text += "Planet name: %s \n" % self.name
@@ -46,10 +45,10 @@ class Planet:
         """
         Transform from Earth masses to SI units.
         """
-        return self.mass * 5.9722e24 # kg
+        return self.mass * 5.9722e24  # kg
 
     def radius_in_m(self):
         """
         Transform from Earth radius to SI units.
         """
-        return self.radius * 6.371e6 # m
+        return self.radius * 6.371e6  # m
