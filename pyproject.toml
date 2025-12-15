@@ -3,7 +3,7 @@ name = "pysolsys"
 version = "0.0.1"
 description = "My Solar System Generator."
 requires-python = ">=3.10"
-dependencies = ["h5py"]
+dependencies = ["h5py", "matplotlib"]
 authors = [
     {name = "Iulia Emilia Brumboiu", email = "iubr@umk.pl"},
 ]
