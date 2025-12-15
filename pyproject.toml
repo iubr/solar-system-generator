@@ -9,5 +9,9 @@ authors = [
 ]
 
 [build-system]
-requires = ["setuptools >= 77.0.3"]
+requires = ["setuptools >= 77.0.3", "cython"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+ext-modules = [
+ { name = "pysolsys.cintegrate", sources = ["pysolsys/cintegrate_wrapper.pyx", "pysolsys/cintegrate.cpp"], language = "c++" }]
