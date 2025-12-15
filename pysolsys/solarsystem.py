@@ -11,7 +11,6 @@ import sys
 import time
 
 import numpy as np
-import py3umk
 from matplotlib import colormaps as cmaps
 from matplotlib import pyplot as plt
 
